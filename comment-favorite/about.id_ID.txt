@@ -1,0 +1,10 @@
+Title: Komentar Favorit
+Author: Taufik Nurrohman
+URL: http://latitudu.com
+Version: 1.0.0
+
+====
+
+> Berikan tanda pada komentar-komentar yang Anda anggap penting atau menarik.
+
+Pada halaman [manajer komentar]({{url.manager}}comment), sunting komentar-komentar yang ingin Anda beri tanda sebagai komentar favorit. Di dalam editor komentar, klik pada tab **Bidang**. Centang bidang yang bertuliskan _Tandai Sebagai Komentar Favorit_.

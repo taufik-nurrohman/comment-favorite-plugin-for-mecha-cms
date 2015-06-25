@@ -1,0 +1,10 @@
+Title: Komentar Favorit
+Author: Taufik Nurrohman
+URL: http://latitudu.com
+Version: 1.0.0
+
+====
+
+> Give a special mark on any comments that you consider important or interesting.
+
+On the [comments manager]({{url.manager}}comment) page, edit the comment you want to mark it as a favorite. Once you get into the comment editor, click on the **Fields** tab, then check the custom field that reads _Mark as Favorite_.

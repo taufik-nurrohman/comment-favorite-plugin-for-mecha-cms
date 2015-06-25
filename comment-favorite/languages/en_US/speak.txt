@@ -1,0 +1,4 @@
+plugin_comment_favorite_title_mark: Mark as Favorite
+plugin_comment_favorite_title_marker: Marker
+plugin_comment_favorite_title_container: Container
+plugin_comment_favorite_title_css: <abbr title="Cascading Style Sheet">CSS</abbr>

@@ -1,0 +1,4 @@
+plugin_comment_favorite_title_mark: Tandai Sebagai Komentar Favorit
+plugin_comment_favorite_title_marker: Penanda
+plugin_comment_favorite_title_container: Kontainer
+plugin_comment_favorite_title_css: <abbr title="Cascading Style Sheet">CSS</abbr>

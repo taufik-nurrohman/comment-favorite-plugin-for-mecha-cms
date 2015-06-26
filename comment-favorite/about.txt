@@ -1,4 +1,4 @@
-Title: Komentar Favorit
+Title: Comment Favorite
 Author: Taufik Nurrohman
 URL: http://latitudu.com
 Version: 1.0.0

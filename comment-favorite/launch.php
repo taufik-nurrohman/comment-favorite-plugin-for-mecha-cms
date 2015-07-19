@@ -1,6 +1,6 @@
 <?php
 
-$cfv_config = File::open(PLUGIN . DS . basename(__DIR__) . DS . 'states' . DS . 'config.txt')->unserialize();
+$cfv_config = File::open(PLUGIN . DS . File::B(__DIR__) . DS . 'states' . DS . 'config.txt')->unserialize();
 
 Filter::add('shield:lot', function($data) use($cfv_config) {
     if(isset($data['article']->comments) && $data['article']->comments !== false) {
@@ -16,7 +16,7 @@ Filter::add('shield:lot', function($data) use($cfv_config) {
 });
 
 if(trim($cfv_config['css']) !== "") {
-    Weapon::add('shell_after', function() use($cfv_config) {
-        echo O_BEGIN . str_repeat(TAB, 2) . '<style media="screen">' . $cfv_config['css'] . '</style>' . O_END;
+    Weapon::add('shell_after', function() use($config, $cfv_config) {
+        echo O_BEGIN . str_repeat(TAB, 2) . '<style media="screen">' . ($config->html_minifier ? Converter::detractShell($cfv_config['css']) : $cfv_config['css']) . '</style>' . O_END;
     });
 }

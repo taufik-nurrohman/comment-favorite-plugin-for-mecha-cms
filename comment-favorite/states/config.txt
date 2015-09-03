@@ -1,7 +1,8 @@
-a:3:{s:6:"marker";s:74:"%s <span class="comment-favorite-marker"><i class="fa fa-star"></i></span>";s:9:"container";s:48:"<div class="comment-favorite-container">%s</div>";s:3:"css";s:161:".comment-favorite-marker {color:#FFB350}
+a:3:{s:6:"marker";s:74:"%s <span class="comment-favorite-marker"><i class="fa fa-star"></i></span>";s:9:"container";s:48:"<div class="comment-favorite-container">%s</div>";s:3:"css";s:220:".comment-favorite-marker {color:#FFB350}
 .comment-favorite-container {
   background-color:#FBF7B4;
   border:1px solid #E9CB80;
   margin:0;
   padding:1em 1.4em;
-}";}
+}
+.comment-favorite-container p:last-child {margin-bottom:0}";}

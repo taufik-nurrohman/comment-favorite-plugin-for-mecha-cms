@@ -17,6 +17,6 @@ Filter::add('shield:lot', function($data) use($cfv_config) {
 
 if(trim($cfv_config['css']) !== "") {
     Weapon::add('shell_after', function() use($config, $cfv_config) {
-        echo O_BEGIN . str_repeat(TAB, 2) . '<style media="screen">' . ($config->html_minifier ? Converter::detractShell($cfv_config['css']) : $cfv_config['css']) . '</style>' . O_END;
+        echo O_BEGIN . '<style media="screen">' . ($config->html_minifier ? Converter::detractShell($cfv_config['css']) : $cfv_config['css']) . '</style>' . O_END;
     });
 }

@@ -15,3 +15,12 @@ Route::accept($config->manager->slug . '/plugin/' . File::B(__DIR__) . '/update'
         Guardian::kick(File::D($config->url_current));
     }
 });
+
+// Add a star icon to the comment marked as favorite ...
+if(Route::is($config->manager->slug . '/comment') || Route::is($config->manager->slug . '/comment/(:num)')) {
+    Weapon::add('comment_footer', function($page) {
+        if(isset($page->fields->comment_favorite) && $page->fields->comment_favorite !== false) {
+            echo '<span style="color:#FFB350;">' . Jot::icon('star') . '</span> &middot; ';
+        }
+    });
+}

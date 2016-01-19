@@ -6,7 +6,7 @@ Filter::add('shield:lot', function($data) use($config, $cf_config) {
     $c = $config->page_type;
     if(isset($data[$c]->comments) && $data[$c]->comments !== false) {
         foreach($data[$c]->comments as &$comment) {
-            if(isset($comment->fields->comment_favorite)) {
+            if(isset($comment->fields->comment_favorite) && $comment->fields->comment_favorite !== false) {
                 $comment->name = sprintf($cf_config['marker'], $comment->name);
                 $comment->message = sprintf($cf_config['container'], $comment->message);
             }
